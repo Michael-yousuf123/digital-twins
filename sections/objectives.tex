@@ -1,0 +1,24 @@
+\chapter*{Objectives}
+\addcontentsline{toc}{chapter}{Objectives}
+
+% text:
+
+\let\Item\item
+\newcommand\SpecialItem{\renewcommand\item[1][]{\Item[\textbullet~\bfseries##1]}}
+\renewcommand\enddescription{\endlist\global\let\item\Item}
+\SpecialItem
+\begin{description}
+  \item[Framework Development:] Design an AI powered multi-organ digital twin framework integrating PK/PD,multi-omics, and real world data for insilico clinical trials.
+  \item[Drug Modeling:] Develop and validate GNN models for drug-target-organ interaction prediction using CHEMBL, TG-GATEs, and DrugBank datasets.
+  \item[Toxicity Prediction:] Impelement models for hepatotoxicity and nephrotoxicity using TG-GATEs toxicogenomics data and FAERS adverse event reports.
+  \item[Dose Optimization:] Apply reinforcement learning for adaptive dose scheduling and therapy optimization in virtual cohorts.
+  \item[Explainable AI:] Incorpoarate SHAP and Lime frameworks to ensure transparecy and regulatory grade interpretability of model outputs.
+  \item[Validation and Translation:] Conduct retrospective validation against ClinicalTrials.gov oncology datasets and explore regulatory pathways for insilico clinical trial adoption.
+  \item[Industry Alignment:] Assess economic and translational benefits of digital twin integration in pharmaceutical development pipelines.   
+\end{description}
+
+% \begin{description}
+%   \item[Text] more text
+%   \item[and some] more text
+%   \item[] empty
+% \end{description}

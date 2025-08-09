@@ -1,0 +1,33 @@
+\chapter*{Materials and Methods}
+\addcontentsline{toc}{chapter}{Materials and Methods}
+
+\begin{itemize}
+    \item \textbf{Datasets:}
+    \begin{itemize}
+        \item \textbf{Drug and Molecular Data :} DrugBank, ChEMBL, Pubchem
+        \item \textbf{Toxicity and Safety Data:}TG-GATEs, FAERS, SIDER
+        \item \textbf{Multi-Omics Data:} TCGA, LINCS, GTEx for transcriptomic and methabolomic integration
+        \item \textbf{Clinical Trials Data:} CinicalTrials.gov and MIMIC-IV for retrospective validation.
+    \end{itemize}
+    \item \textbf{Computational Framework:}
+        \begin{itemize}
+            \item \textbf{Hardware:} High-performance balanced workstation (RTX 4090 GPU, 128 GB RAM) supplemented with Azure A100 cloud resources for large scale simulation.
+            \item \textbf{AI Models:} 
+            \begin{itemize}
+                \item \textbf{GNN Models:} For Molecular Property and interaction prediction.
+                \item \textbf{Reinforcement Learning:} For optimization of drug-response simulations.
+                \item \textbf{Hybrid Models:} Combining AI and PK/PD models for organ-specific simulations.
+            \end{itemize}
+            \item \textbf{Software:} Pythorch, TensorFlow, DeepChem, and GROMACS for molecular simulations, Docker/MLflow for reproducibility, and Ray for distributed computing.
+            \item \textbf{Explainable AI:} SHAP, LIME, and counterfactual explanations for model interpretability.
+        \end{itemize}
+    \item \textbf{Model Development:}
+    \begin{itemize}
+        \item \textbf{Data Preprocessing:} Standardize molecular structures(SMILES), Normalize omics data, and harmonize adverse event reports.
+        \item \textbf{Digital Twin Construction:} Build organ-specific twins(liver and kidney) integrating AI predictions with mechanistic PK/PD models.
+        \item \textbf{Simulation Pipeline:} Generate synthetic patient cohorts using statistical variation and real-world clinical data distributions.
+        \item \textbf{Toxicity and Dose Trials:} Run Reinforcement Learning driven virtual trials to identify safe and effective dosing regimens.
+        \item \textbf{Validation and Testing:} Compare virtual outcomes against historical clinical trial data to assess predictive accuracy.
+        \item \textbf{Deployment:} Package Framework for reproducibility, industry collaboration and regulatory review.
+    \end{itemize}
+\end{itemize}
